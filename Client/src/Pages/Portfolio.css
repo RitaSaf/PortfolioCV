@@ -1,0 +1,155 @@
+.portfolio-container {
+  text-align: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #01121d, #c2d5e5, #889ec4);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.portfolio-title {
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: #043681;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease forwards;
+  font-family: "Times New Roman", Times, serif;
+
+}
+
+.portfolio-subtitle {
+  font-size: 1.9rem;
+  color: #073682;
+  margin-bottom: 50px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  animation: fadeInUp 1s ease forwards;
+   font-family: "Copperplate", "Papyrus", fantasy;
+
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #72b8e0;
+  margin-bottom: 20px;
+
+}
+
+.highlight {
+  color: #0892e1;
+}
+
+.slogan {
+  font-size: 1.4rem;
+  color: #496aec;
+  font-weight: 500;
+  margin-bottom: 40px;
+  
+}
+
+.profile-card {
+  background-color: #ffffffdd; /* light transparent white */
+  border-radius: 18px;
+  padding: 25px 20px;
+  margin: 30px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+  width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+}
+
+.profile-img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+  margin-bottom: 15px;
+}
+
+.profile-img:hover {
+  transform: scale(1.07);
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: 600;
+  color: #53adf6;
+  margin-bottom: 5px;
+ font-family: "Copperplate", "Papyrus", fantasy;
+
+}
+
+.profile-tagline {
+  font-style: italic;
+  color: #666;
+  margin-top: 0;
+}
+
+.portfolio-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.side-text {
+  max-width: 250px;
+  color: #044956;
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 1.3;
+  align-self: flex-start;
+  font-family: "Garamond", serif;
+  
+}
+
+.side-text h3 {
+  color: #ee437c;
+  font-size: 1.7rem;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-family: "Copperplate", "Papyrus", fantasy;
+
+}

@@ -1,0 +1,145 @@
+/* Skills.css */
+
+.skills-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 2.2rem;
+}
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.person-section {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.person-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.person-name {
+  margin: 0 0 20px 0;
+  color: #222;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.skills-list {
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.skill-item {
+  margin-bottom: 25px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: #444;
+}
+
+.skill-level {
+  color: #666;
+  font-weight: 500;
+}
+
+.skill-bar {
+  height: 12px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4e73df, #2a48a3);
+  border-radius: 10px;
+  transition: width 0.8s ease-in-out;
+}
+
+.cv-download-section {
+  text-align: center;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.cv-download-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #4a6cf7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+.cv-download-btn:hover {
+  background-color: #2a48a3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .skills-wrapper {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .person-section {
+    padding: 20px;
+  }
+  
+  .skills-title {
+    font-size: 1.8rem;
+  }
+  
+  .person-name {
+    font-size: 1.5rem;
+  }
+  
+  .cv-download-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    min-width: 150px;
+  }
+}
